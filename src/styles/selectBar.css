@@ -1,0 +1,12 @@
+.selector-wrapper {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
+  align-items: center;
+}
+
+select, .search-text {
+  width: 100%;
+}

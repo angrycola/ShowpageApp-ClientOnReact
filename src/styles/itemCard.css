@@ -1,0 +1,9 @@
+.item-container {
+  display: grid;
+  border: 1px solid #CCCCCC;
+  border-radius: .3em;
+}
+
+.item-container * {
+  margin: auto;
+}
