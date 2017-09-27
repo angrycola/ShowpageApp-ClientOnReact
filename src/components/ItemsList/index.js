@@ -3,10 +3,10 @@ import '../../styles/itemList.css'
 import ItemCard from '../ItemCard';
 
 
-const ItemsList = () => {
+const ItemsList = ({ items }) => {
 	return (
 		<div className="items-container">
-			<ItemCard />
+			{ items.map(item => <ItemCard key={ item.extId } item={ item } />) }
 		</div>
 	);
 };

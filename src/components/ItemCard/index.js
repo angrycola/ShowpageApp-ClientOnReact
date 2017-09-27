@@ -1,16 +1,17 @@
 import React from 'react';
 import '../../styles/itemCard.css'
 
-const ItemCard = () => {
+const ItemCard = ({ item }) => {
+	const { price, genre, description, title, extId, subject, priceBonus } = item;
 	return (
 		<div className='item-container'>
 			<div className="">
 				<img src="/covers/115.png" />
 			</div>
 			<div className="">
-				<p className="">Демо-версия</p>
-				<p className="">5-11 классы</p>
-				<p className="">Медиа-коллекция</p>
+				<p className="">{ item.subject }</p>
+				<p className="">{ item.grade }</p>
+				<p className="">{ item.genre }</p>
 				<button className="">Перейти к обучению</button>
 			</div>
 		</div>
