@@ -28,3 +28,11 @@ export const filters = (state=initFilters, action) => {
 	default: return state;
 	}
 };
+
+export const currency = (state={ buttonText: 'рубли' }, action) => {
+	switch (action.type) {
+	case C.CHANGE_CURRENCY:
+		return action.payload;
+	default: return state;
+	}
+};

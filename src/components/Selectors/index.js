@@ -32,7 +32,7 @@ const genres = [
 
 const grades = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ];
 
-const Selectors = ({ filterSubject, filterGenre, filterGrade, filterSearch }) => {
+const Selectors = ({ filterSubject, filterGenre, filterGrade, filterSearch, changeCurrency }) => {
 
 	const handleSubjectOptions = event => {
 		filterSubject(event.target.value);
@@ -48,6 +48,10 @@ const Selectors = ({ filterSubject, filterGenre, filterGrade, filterSearch }) =>
 
 	const handleSearchText = event => {
 		filterSearch(event.target.value);
+	};
+
+	const handleCurrencyOptions = () => {
+		changeCurrency();
 	};
 
 	return (
@@ -69,7 +73,7 @@ const Selectors = ({ filterSubject, filterGenre, filterGrade, filterSearch }) =>
 				</select>
 			</div>
 			<div>
-				<select>
+				<select onChange={ handleCurrencyOptions }>
 					<option>Рубли</option>
 					<option>Бонусы</option>
 				</select>

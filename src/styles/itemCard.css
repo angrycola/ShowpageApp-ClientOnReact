@@ -1,9 +1,14 @@
-.item-container {
-  display: grid;
-  border: 1px solid #CCCCCC;
+.item-wrapper {
+  background: #CCCCCC;
   border-radius: .3em;
+  padding: .1em;
 }
 
-/*.item-container * {
-  margin: auto;
-}*/
+.item-container {
+  display: grid;
+  justify-items: center;
+  border: 1px solid #CCCCCC;
+  border-radius: .3em;
+  background: white;
+  padding: .3em 0;
+}

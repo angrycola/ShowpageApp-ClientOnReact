@@ -3,6 +3,7 @@ const constants = {
 	BY_SUBJECT: 'BY_SUBJECT',
 	BY_GENRE: 'BY_GENRE',
 	BY_GRADE: 'BY_GRADE',
-	BY_SEARCH: 'BY_SEARCH'
+	BY_SEARCH: 'BY_SEARCH',
+	CHANGE_CURRENCY: 'CHANGE_CURRENCY'	
 };
 export default constants;

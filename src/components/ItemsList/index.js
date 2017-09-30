@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/itemList.css'
-import ItemCard from '../ItemCard';
+import ItemCard from '../../containers/ItemCard';
 
 
 const ItemsList = ({ items }) => {

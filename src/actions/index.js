@@ -19,3 +19,10 @@ export const filterGenre = genre => dispatch => dispatch({ type: C.BY_GENRE, pay
 export const filterGrade = grade => dispatch => dispatch({ type: C.BY_GRADE, payload: grade });
 
 export const filterSearch = text => dispatch => dispatch({ type: C.BY_SEARCH, payload: text });
+
+export const changeCurrency = () => (dispatch, getState) => {
+	const currency = getState().currency.buttonText;
+	currency === 'рубли'
+		? dispatch({ type: C.CHANGE_CURRENCY, payload: { buttonText: 'бонусы' } })
+		: dispatch({ type: C.CHANGE_CURRENCY, payload: { buttonText: 'рубли' } });
+};
