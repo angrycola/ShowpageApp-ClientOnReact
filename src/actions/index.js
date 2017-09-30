@@ -11,3 +11,11 @@ export const indexItems = () => dispatch => {
 	});
 	return dispatch({ type: C.INDEX_ITEMS, payload: items });
 };
+
+export const filterSubject = subject => dispatch => dispatch({ type: C.BY_SUBJECT, payload: subject });
+
+export const filterGenre = genre => dispatch => dispatch({ type: C.BY_GENRE, payload: genre });
+
+export const filterGrade = grade => dispatch => dispatch({ type: C.BY_GRADE, payload: grade });
+
+export const filterSearch = text => dispatch => dispatch({ type: C.BY_SEARCH, payload: text });
